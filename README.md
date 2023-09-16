@@ -1,1 +1,1 @@
-# HW_28.1_Final_project_Rostelecom_Ryabinina_A.M.
+# HW_28.1.ИТОГОВЫЙ ПРОЕКТ ПО АВТОМАТИЗАЦИИ ТЕСТИРОВАНИЯ
