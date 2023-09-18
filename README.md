@@ -50,6 +50,35 @@ ___
 
 Браузер: Google Chrome Версия 117.0.5938.89 (Официальная сборка), (64 бит)
 ***
+**В корневом каталоге проекта содержаться:**
+* [conftest.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/conftest.py) - содержит условия для выполнения тестов.
+* [pytest.ini](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pytest.ini) - содержит указание на автоматическую генерацию html-отчета.
+* [README.md](https://github.com/mafaga00/Final_project_QAP1031/blob/master/README.md) - содержит информацию в целом о проекте.
+* [requirements.txt](https://github.com/mafaga00/Final_project_QAP1031/blob/master/requirements.txt) - содержит все библиотеки и зависимости проекта.
+***
+**:bookmark_tabs: Директория pages содержит:**
+* [base_page.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pages/base_page.py) - содержит все общие методы и утилиты для всех страниц.
+* [auth_page.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pages/auth_page.py) - содержит специфичные методы и утилиты для страницы авторизации.
+***
+**:bookmark_tabs: Директория tests содержит:**
+* [assets](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/assets) - содержит CSS-стили для html-отчёта.
+* [base_test.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/base_test.py) - содержит базовый тестовый класс.
+* [test_auth.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/test_auth.py) - содержит автотесты для страницы авторизации.
+***
+**:bookmark_tabs: Директория utilities содержит:**
+* [locators.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/utilities/locators.py) - содержит локаторы страницы.
+* [test_data.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/utilities/test_data.py) - содержит все данные для проверок авторизации.
+***
+
+
+
+
+
+
+
+
+
+
 ### Инструменты, которые применялись для тестирования.
 
 * Для тестирования сайта был использован 
