@@ -3,7 +3,7 @@ QAP-1035
 ### Объект тестирования: [Ростелеком IT](https://b2c.passport.rt.ru)
 
 → [Требования по проекту (.doc)](https://docs.google.com/document/d/18DggAU8-W1-TEcbM9WgnG_L3YDF8uFKQrAS7rjS9w2g/edit?usp=sharing)
-___
+
 **Заказчик передал вам следующее задание:**
 
 1. Протестировать требования.
@@ -34,83 +34,22 @@ ___
 * Регистрацию в личном кабинете
 * Восстановление пароля в личном кабинете
 ___
-Сформированы тест-кейсы и отчёты о дефектах: [смотреть здесь](https://docs.google.com/spreadsheets/d/1aZWL0gVnk_XShbtlnsnQKIZt6Dn730fDVJlYXYJ-h-U/edit?usp=sharing)
+Сформированы тест-кейсы и отчёты о дефектах: [смотреть здесь](https://docs.google.com/spreadsheets/d/1045_wAYBXBWABqTyiGLeQmq2eslhoFgMuW6y5fRI29o/edit?usp=sharing)
 ___
-Для тестирования интерфейса были использованы:
+При разработке тест-кейсов были применены следующие техники тест-дизайна:
 
 ✅разбиение на классы эквивалентности
 
 ✅анализ граничных значений
 
-✅тестирование состояний и переходов
-
+✅предугадывание ошибок
 ___
-**В корневой директории расположены:**
-* файл conftest.py - содержит фикстуру для инициализации браузера и закрытия сессии после завершения теста
-* файл requirements.py - список внешних зависимостей
-* pytest.ini - регистрация маркеров
-
-**В директории /pages расположены:**
-* Base_APP.py - необходимые методы для работы с webdriver
-* locators.py - локаторы web-элементов
-* RandomEmail_APP.py - GET-запросы к временному почтовому ящику на сайте [1secmail.com](https://www.1secmail.com/) для получения валидного E-mail и кода для регистрации на странице/восстановления пароля
-* RosTeleCom_APP.py - необходимые методы для работы с web-элементами на страницах авторизации, регистрации и восстановления пароля
-* settings.py - исходные статические данные и учётные данные, используемые в проведении тестирования
-
-**В директории /tests расположены:**
-* test_positive_reg_page.py - автоматизированные тесты с позитивными сценариями страницы регистрации
-* test_positive_auth_page.py - автоматизированные тесты с позитивными сценариями страницы авторизации
-* test_positive_new_pass_page.py - автоматизированные тесты с позитивными сценариями страницы восстановления пароля
-* test_negative_reg_page.py - автоматизированные тесты с негативными сценариями страницы регистрации
-* test_negative_auth_page.py - автоматизированные тесты с негативными сценариями страницы авторизации
-* test_negative_new_pass_page.py - автоматизированные тесты с негативными сценариями страницы восстановления пароля
-
-**В директории /tests/screenshots** расположены графические файлы с фиксацией результата тестирования
-___
-
 #### Тесты настроены на запуск через Run!
 
-Окружение: Windows 11 Домашняя версия 21H2
+Окружение: Windows 11 Pro
 
-Браузер: Google Chrome 112.0.5615.138 (64-bit)
-
-
-
+Браузер: Google Chrome Версия 117.0.5938.89 (Официальная сборка), (64 бит)
 ***
-**:bookmark_tabs: В корневом каталоге проекта содержаться:**
-* [conftest.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/conftest.py) - содержит условия для выполнения тестов.
-* [pytest.ini](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pytest.ini) - содержит указание на автоматическую генерацию html-отчета.
-* [README.md](https://github.com/mafaga00/Final_project_QAP1031/blob/master/README.md) - содержит информацию в целом о проекте.
-* [requirements.txt](https://github.com/mafaga00/Final_project_QAP1031/blob/master/requirements.txt) - содержит все библиотеки и зависимости проекта.
-***
-**:bookmark_tabs: Директория pages содержит:**
-* [base_page.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pages/base_page.py) - содержит все общие методы и утилиты для всех страниц.
-* [auth_page.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/pages/auth_page.py) - содержит специфичные методы и утилиты для страницы авторизации.
-***
-**:bookmark_tabs: Директория tests содержит:**
-* [assets](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/assets) - содержит CSS-стили для html-отчёта.
-* [base_test.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/base_test.py) - содержит базовый тестовый класс.
-* [test_auth.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/tests/test_auth.py) - содержит автотесты для страницы авторизации.
-***
-**:bookmark_tabs: Директория utilities содержит:**
-* [locators.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/utilities/locators.py) - содержит локаторы страницы.
-* [test_data.py](https://github.com/mafaga00/Final_project_QAP1031/blob/master/utilities/test_data.py) - содержит все данные для проверок авторизации.
-***
-
-
-
-→ [Тест-кейсы (.excel)](https://docs.google.com/spreadsheets/d/18tZqTErSz8f-QQOMp14v2XuCOlpA57ZgK445Zc1rid0/edit?usp=sharing)
-
-→ [Баг-репорты (.excel)](https://docs.google.com/spreadsheets/d/1sQ3JHZdVSOD9qhUG3C5WgKHDRY0SQaYjlopVjvIEBmc/edit?usp=sharing)
-
-### При разработке тест-кейсов были применены следующие техники тест-дизайна: 
- 
-* эквивалентное разбиение
-* анализ граничных значений
-* предугадывание ошибок
-* [диаграмма перехода состояния (.png)](https://drive.google.com/file/d/1wNGMKdT0kgPsPadnHex9vZ1TwRDAKOfT/view?usp=sharing)
-
-
 ### Инструменты, которые применялись для тестирования.
 
 * Для тестирования сайта был использован 
