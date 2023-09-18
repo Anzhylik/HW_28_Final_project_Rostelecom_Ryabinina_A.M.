@@ -51,7 +51,7 @@ ___
 Браузер: Google Chrome Версия 117.0.5938.89 (Официальная сборка), (64 бит)
 ***
 **В корневом каталоге проекта содержаться:**
-* [conftest.py](https://github.com/Anzhylik/HW_28_Final_project_Rostelecom_Ryabinina_A.M./blob/master/conftest.py)
+* [conftest.py](https://github.com/Anzhylik/HW_28_Final_project_Rostelecom_Ryabinina_A.M./blob/master/conftest.py)- содержит условия для выполнения тестов.
 * [pytest.ini](https://github.com/Anzhylik/HW_28_Final_project_Rostelecom_Ryabinina_A.M./blob/master/pytest.ini) - содержит указание на автоматическую генерацию html-отчета.
 * [README.md](https://github.com/Anzhylik/HW_28_Final_project_Rostelecom_Ryabinina_A.M./blob/master/README.md) - содержит информацию в целом о проекте.
 * [requirements.txt](https://github.com/Anzhylik/HW_28_Final_project_Rostelecom_Ryabinina_A.M./blob/master/requirements.txt) - содержит все библиотеки и зависимости проекта.
